@@ -1,0 +1,260 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Management System - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Enhanced Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F3F6FB;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1A374D;
+            color: #FFF;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 3rem;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #FFF;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 8px 15px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #FFA69E;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background-image: url('images/dd.jpeg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .hero-section h1, .hero-section p {
+            position: relative;
+            z-index: 1;
+        }
+        .hero-section h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        .hero-section p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
+        .btn-primary {
+            background-color: #FFA69E;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #C70039;
+            transform: translateY(-5px);
+        }
+
+        /* Main Container */
+        .container {
+            background-color: #FFF;
+            padding: 60px 40px;
+            max-width: 1100px;
+            margin: 50px auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+        .container h2 {
+            font-size: 2.5rem;
+            color: #1A374D;
+            margin-bottom: 20px;
+        }
+        .container p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Features Section */
+        .features ul {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+        .features ul li {
+            background-color: #E8F0F2;
+            width: 30%;
+            padding: 30px;
+            margin-bottom: 40px;
+            text-align: center;
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .features ul li:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        .features ul li h3 {
+            font-size: 2rem;
+            color: #FF5733;
+            margin-bottom: 10px;
+        }
+        .features ul li p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1A374D;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn {
+            background-color: #FF5733;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+            z-index: 1;
+            border-radius: 5px;
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #FFD1A1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: #C70039;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <h1>Internship Management System</h1>
+        <nav>
+            <ul class="nav-list">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Select Login</a>
+                    <div class="dropdown-content">
+                        <a href="adminLogin.jsp">Admin Login</a>
+                        <a href="studentLogin.jsp">Student Login</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Welcome to Your Career Journey</h1>
+        <p>Find the best internships and start building your future today.</p>
+        <button class="btn-primary">Explore Internships</button>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section>
+            <h2>About Our System</h2>
+            <p>Our Internship Management System bridges the gap between students and companies. With an intuitive platform, students can explore internships, and companies can easily manage listings and hire top talent.</p>
+        </section>
+
+        <section class="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>
+                    <h3>Wide Internship Listings</h3>
+                    <p>Explore internships across multiple industries, complete with detailed descriptions.</p>
+                </li>
+                <li>
+                    <h3>Real-Time Tracking</h3>
+                    <p>Track your internship applications and receive regular updates on your status.</p>
+                </li>
+                <li>
+                    <h3>Internship Dashboard</h3>
+                    <p>Manage and review all your applications in one place with our dashboard.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Why Choose Us?</h2>
+            <p>We offer a secure and streamlined way to connect students and companies. Whether you're starting your career or looking for talent, our platform offers the tools you need to succeed.</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Internship Management System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+SMAP
+updateProfile_jsp.java
+JSP
+*S JSP
+*F
++ 0 updateProfile.jsp
+updateProfile.jsp
++ 1 footer.jsp
+footer.jsp
+*L
+1,40:52
+42,77:94
+118,8:171
+1#1,13:179
+125#0,4:191
+*E
